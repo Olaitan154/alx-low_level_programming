@@ -1,12 +1,19 @@
 #include <stdio.h>
 #include <ctype.h>
 /**
-* Description: main - program that prints the program in lowercase,
+* Description: main - program that prints the alphabet in lowercase,
 * followed by a new line
-* Return: Alwaya 0 (Success)
+* You can only use the putchar function
+* Return: Always 0 (Success)
 */
 int main(void)
 {
 int l = 'a';
-while (l<= 'z')
+while (l <= 'z')
 {
+putchar (l);
+l += 1;
+}
+putchar ('\n');
+return (0);
+}
