@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-* Description: main - program that print the alphabet in lowercase,
+* Description: main - program that prints the alphabet in lowercase,
 * and then in uppercase,
 * You can only use the putchar function
 * Return: Always 0 (Success)
@@ -14,7 +14,7 @@ while (lw <= 'z')
 putchar (lw);
 lw += 1;
 }
-while (up <= 'z')
+while (up <= 'Z')
 {
 putchar (up);
 up += 1;
