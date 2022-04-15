@@ -1,18 +1,35 @@
-#include "main.h"
-* print_line - Entry point
-* @n: number of time to print '_'
+#i#include "main.h"
+
+/**
+* print_line - draw a straight line in the terminal.
+* @n: print int
 * Return: Always 0.
 */
-void ptint_line(int n)
+
+void print_line(int n)
+
 {
 int i;
-char k;
 
-k = '_';
-for (i = 0; i < n; i++)
+if (n > 0)
+
 {
-if (n > o)
-_putchar (k);
+
+for (i = 0; i < n; i++)
+
+{
+
+_putchar (95);
 }
+
 _putchar ('\n');
+}
+
+else
+
+{
+
+_putchar ('\n');
+}
+
 }
