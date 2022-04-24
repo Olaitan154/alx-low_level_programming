@@ -1,9 +1,10 @@
 #include "holberton.h"
 /**
-* reverse_array - reverses an arra
+* reverse_array - reverses an array.
 * @n: an array of integers
 * @n: number of elements of an array
 *
+* Return: nothing
 */
 void reverse_array(int *a, int n)
 {
