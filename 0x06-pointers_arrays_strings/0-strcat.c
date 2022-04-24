@@ -5,7 +5,7 @@
 *
 * @dest: pointer to destination char
 * @src: pointer to source char
-* Return: char
+* Return: char.
 */
 
 char *_strcat(char *dest, char *src)
@@ -17,7 +17,7 @@ while (*(dest + i) != '\0')
 i++;
 while (*(src + j) != '\0')
 {
-*(dest + i) = *(src + i);
+*(dest + i) + *(src + j);
 i++;
 j++;
 }
