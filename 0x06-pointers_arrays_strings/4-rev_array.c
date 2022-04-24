@@ -1,7 +1,7 @@
 #include "holberton.h"
 /**
 * reverse_array - reverses an array.
-* @n: an array of integers.
+* @a: an array of integers.
 * @n: number of elements of an array
 *
 * Return: nothing
@@ -13,7 +13,7 @@ int temp;
 
 i = 0;
 n = n - 1;
-
+  
 while (i < n)
 {
 temp = a[i];
