@@ -1,36 +1,35 @@
 #include "holberton.h"
 
 /**
-* cap_string - function that capitalizes all words of a string.
-* @s: Pointer to Char
-* Return: char.
+* cap_string - capitlizes all words of a string
+* @str: the string to change the first letter of a word in uppercase
+*
+* Return: capitalizes letters
 */
+char *cap_string(char *str)
+{
+int i;
+int j;
+char c[] = {44, 59, 46, 33, 63, 34, 40, 41, 123, 125, 32, 10, 9};
 
-char *cap_string(char *s)
-{
-int i = 0;
+i = 0;
 
-while (*(s + i) != '\0')
+while (str[i] != '\0')
 {
-if (i == 0 && (*(s + i) >= 97 && *(s + i) <= 122))
+if (i == 0 && str[i] >= 97 && str[i] <= 122)
 {
-*(s + i) = *(s + i) - ' ';
+str[i] = str[i] - 32;
+}
+j = o;
+while (c[j] != '\0')
+{
+if (c[j] == str[i] && (str[i + 1] >= 97 && str[i + 1] <= 122))
+{
+str[i + 1] = str[i +1] - 32;
+}
+j++;
+}
 i++;
 }
-if (*(s + i) == ' ' || *(s + i) == '\n' || *(s + i) == '\t'
-|| *(s + i) == ',' || *(s + i) == ';' || *(s + i) == '!'
-|| *(s + i) == '?' || *(s + i) == '"' || *(s + i) == '('
-|| *(s + i) == ')' || *(s + i) == '{' || *(s + i) == '}'
-|| *(s + i) == ',')
-{
-i++;
-if (*(s + i) >= 97 && *(s + i) <= 122)
-{
-*(s + i) = *(s + i) - ' ';
-}
-}
-else
-i++;
-}
-return (s);
+return (str);
 }
