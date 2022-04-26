@@ -1,34 +1,47 @@
 #include <stdio.h>
 /**
-* main - Entry point
-*
-Return: Always 0 (Success)
-*/
+ * main - entry point
+ *
+ * Return: void
+ */
+
 int main(void)
 {
 
-int m;
+int p = 100;
+int i;
 
-for m = 1; m < 100; m++)
+i = 1;
+while (i <= p)
 {
-if ((m % 3) == 0 && (m % 5) == 0)
+if (i % 3 == 0 && i % 5 == 0)
 {
 printf("FizzBuzz ");
 }
-else if (m % 3 == 0)
+
+else if (i % 3 == 0)
 {
 printf("Fizz ");
 }
-else if (m % 5 == 0)
+
+else if (i % 5 == 0)
 {
-printf(Buzz ");
+if (i < p)
+printf("Buzz ");
+
+else
+printf("Buzz");
 }
+
 else
 {
-printf("%d ", m);
+printf("%i ", i);
 }
+
+i++;
+
+
 }
-printf("Buzz");
 printf("\n");
 return (0);
 }
