@@ -1,10 +1,9 @@
 #include "holberton.h"
 
-?88
+/**
 * factional - returns the factional of a given number.
 *
-*
-* @n: input number
+* @: input number
 *
 * Return: int
 */
