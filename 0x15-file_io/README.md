@@ -1,1 +1,1 @@
-file extension
+README for C - file io
